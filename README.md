@@ -11,19 +11,23 @@ Section 2:
 
 Section 3 
 a)	Sonar lint / EclEmma scan Snapshot 
-    Could not install Sonar Lint on my laptop due to some network issues
+    	https://github.com/sandipnpatil/branch_cash_tally_tiaa_test/blob/master/src/main/resources/images/SonarLint.png
+	
+	
 b)	Final Output Snapshot 
     It is assumed that output directory will D:/output and is present in D:
-    match.json
+    match.json:
+    
     [{"location":"\"Mumbai\"","totalcollection":124.0,"locationid":"BOM-1234-456","sumoforder":124.0}]
     
-    doNotMatch.json
+    doNotMatch.json:
+    
     [{"location":"\"Mumbai\"","totalcollection":124.0,"locationid":"BOM-1234-457","sumoforder":132.0},{"location":"\"Mumbai\"","totalcollection":124.0,"locationid":"BOM-789-101","sumoforder":132.0}]
     
-    three input files:
+   
     
 c)	Junit Coverage Snapshot
-Note: (You can link directly to the raw version of an image from your image folder. Hence from section 1.1 if your GIT Link is : https://github.com/nescafe2018/intrvw_stind , then you can have the following text in your readme ![SonarLint] (https://github.com/nescafe2018/intrvw_stind /<Link of you image) )
+
 
 Section 4 
 Licensing 
