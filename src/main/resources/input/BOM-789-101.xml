@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:cmfoodchain xmlns:tns="http://www.example.org/branchDataFile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/branchDataFile BranchDataFile.xsd ">
+  <tns:branch>
+    <tns:location>"Mumbai"</tns:location>
+    <tns:totalCollection>124.00</tns:totalCollection>
+    <tns:locationId>BOM-789-101</tns:locationId>
+  </tns:branch>
+  <tns:orders>
+  	<tns:orderdetail>
+			<tns:orderid>1</tns:orderid>
+			<tns:billamount>62.00</tns:billamount>
+		</tns:orderdetail>
+		<tns:orderdetail>
+			<tns:orderid>2</tns:orderid>
+			<tns:billamount>70.00</tns:billamount>
+		</tns:orderdetail>
+
+  </tns:orders>
+</tns:cmfoodchain>

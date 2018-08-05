@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/branchDataFile" xmlns:tns="http://www.example.org/branchDataFile" elementFormDefault="qualified">
+
+
+
+    <complexType name="branchType">
+    	<sequence>
+    		<element name="location" type="string"></element>
+    		<element name="totalCollection" type="string"></element>
+    		<element name="locationId" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="orderDetailType">
+    	<sequence>
+    		<element name="orderid" type="byte"></element>
+    		<element name="billamount" type="float"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="ordersType">
+    	<sequence>
+    		<element name="orderdetail" type="tns:orderDetailType"
+    			maxOccurs="unbounded" minOccurs="0">
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="cmFoodChainType">
+    	<sequence>
+    		<element name="branch" type="tns:branchType"></element>
+    		<element name="orders" type="tns:ordersType"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="cmfoodchain" type="tns:cmFoodChainType"></element>
+</schema>
