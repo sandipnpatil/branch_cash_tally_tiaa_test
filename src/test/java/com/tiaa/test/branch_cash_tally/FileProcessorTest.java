@@ -1,10 +1,13 @@
 package com.tiaa.test.branch_cash_tally;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -24,6 +27,12 @@ public class FileProcessorTest {
 		File noMatchFile = new File("D:/output/notmatched.json");
 		Assert.assertTrue(matchFile.exists());
 		Assert.assertTrue(noMatchFile.exists());
+	}
+	
+	@Test(expected = FileNotFoundException.class)
+	public void testProcessJsonFile(){
+		processor.processJsonFile(new File(""), new ArrayList<>(), new ArrayList<>());
+		
 	}
 
 }
